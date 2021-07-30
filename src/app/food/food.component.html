@@ -1,0 +1,90 @@
+  <div class="container">
+    <div class="row">
+        <div>
+            <div class="panel">
+                <!--<div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                            <h4 class="title">Dry Food Making Procedure</h4>
+                        </div>
+                        <div class="col-sm-9 col-xs-12 text-right">
+                            <div class="btn_group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button class="btn btn-default" title="Reload"><i class="fa fa-sync-alt"></i></button>
+                                <button class="btn btn-default" title="Pdf"><i class="fa fa-file-pdf"></i></button>
+                                <button class="btn btn-default" title="Excel"><i class="fas fa-file-excel"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="tableHead">
+                    <h4 class="title">Dry Food Making Procedure</h4>
+                    <input type="text" #t1 class="searcheinput" placeholder="Search">
+                </div>
+                <div class="panel-body table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                              <th>Product</th>
+                              <th>Code</th>
+                              <th>Quantity</th>
+                              <th>Type</th>
+                              <th>Classification</th>
+                              <th>Recalling Firm</th>
+                              <th>Reason for Recall</th>
+                              <th>Country</th>
+                              <th>State</th>
+                              <th>City</th>
+                              <th>Address</th>
+                              <th>Postal Code</th>
+                              <th>Distribution Pattern</th>
+                              <th>Status</th>
+                              <th>Termination Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let f of foody.results | paginate: {itemsPerPage: 6, currentPage: p};">
+                            <td>{{f.product_description}}</td>
+                            <td>{{f.code_info}}</td>
+                            <td>{{f.product_quantity}}</td>
+                            <td>{{f.product_type}}</td>
+                            <td>{{f.classification}}</td>
+                            <td>{{f.recalling_firm}}</td>
+                            <td>{{f.reason_for_recall}}</td>
+                            <td>{{f.country}}</td>
+                            <td>{{f.state}}</td>
+                            <td>{{f.city}}</td>
+                            <td>{{f.address_1}}</td>
+                            <td>{{f.postal_code}}</td>
+                            <td>{{f.distribution_pattern}}</td>
+                            <td>{{f.status}}</td>
+                            <td>{{f.termination_date}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col col-sm-6 col-xs-6">Showing 6 Items per Page</div>
+                        <div class="col-sm-6 col-xs-6">
+                            <ul class="pagination hidden-xs pull-right">
+                                <pagination-controls (pageChange)="p=$event" class="float-right my-pagination" ></pagination-controls>
+                                <!--<li><a href="#"></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">></a></li>-->
+                            </ul>
+                            <ul class="pagination visible-xs pull-right">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,94 @@
+  <div class="container">
+    <div class="row">
+        <div class="f">
+            <div class="panel">
+                <!--<div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                            <h4 class="title">Cocktail Making Procedure and Ingredients</h4>
+                        </div>
+                        <div class="col-sm-9 col-xs-12 text-right">
+                            <div class="btn_group">
+                                <input type="text" class="form-control" [(ngModel)]='search' placeholder="Search">
+                                <button class="btn btn-default" title="Reload"><i class="fa fa-sync-alt"></i></button>
+                                <button class="btn btn-default" title="Pdf"><i class="fa fa-file-pdf"></i></button>
+                                <button class="btn btn-default" title="Excel"><i class="fas fa-file-excel"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="tableHead">
+                    <h4 class="title">Cocktail Making Procedure and Ingredients</h4>
+                    <input type="text" #t1 class="searcheinput" placeholder="Search">
+                </div>
+                <div class="panel-body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Drink</th>
+                              <th>Category</th>
+                              <th>Alcoholic</th>
+                              <th>Glass</th>
+                              <th>Instructions</th>
+                              <th>1st Ingredient</th>
+                              <th>2nd Ingredient</th>
+                              <th>3rd Ingredient</th>
+                              <th>4th Ingredient</th>
+                              <th>5th Ingredient</th>
+                              <th>1st Measure</th>
+                              <th>2nd Measure</th>
+                              <th>3rd Measure</th>
+                              <th>4th Measure</th>
+                              <th>5th Measure</th>
+                              <th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let c of food.drinks | paginate: {itemsPerPage: 5, currentPage: p} |filter:search">
+                            <td>{{c.idDrink}}</td>
+                            <td>{{c.strDrink}}</td>
+                            <td>{{c.strCategory}}</td>
+                            <td>{{c.strAlcoholic}}</td>
+                            <td>{{c.strGlass}}</td>
+                            <td>{{c.strInstructions}}</td>
+                            <td>{{c.strIngredient1}}</td>
+                            <td>{{c.strIngredient2}}</td>
+                            <td>{{c.strIngredient3}}</td>
+                            <td>{{c.strIngredient4}}</td>
+                            <td>{{c.strIngredient5}}</td>
+                            <td>{{c.strMeasure1}}</td>
+                            <td>{{c.strMeasure2}}</td>
+                            <td>{{c.strMeasure3}}</td>
+                            <td>{{c.strMeasure4}}</td>
+                            <td>{{c.strMeasure5}}</td>   
+                            <td><img [src]="c.strDrinkThumb" height="100px" width="100px" /></td>                
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col col-sm-6 col-xs-6">showing 5 items per page</div>
+                        <div class="col-sm-6 col-xs-6">
+                            <ul class="pagination hidden-xs pull-right">
+                                <pagination-controls (pageChange)="p=$event" class="float-right my-pagination" ></pagination-controls>
+                                <!--<li><a href="#"></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">></a></li>-->
+                            </ul>
+                            <ul class="pagination visible-xs pull-right">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

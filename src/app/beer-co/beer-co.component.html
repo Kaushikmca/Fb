@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <div class="panel">
+                <!--<div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                            <h4 class="title">Details of Company</h4>
+                        </div>
+                        <div>
+                            <div class="btn_group">
+                                <input type="text" #t1 class="form-control" placeholder="Search" (keyup)="search(t1)">
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="tableHead">
+                    <h4 class="title">Details of Company</h4>
+                    <input type="text" #t1 class="searcheinput" placeholder="Search" (keyup)="search(t1)">
+                </div>
+                <div class="panel-body table-responsive">
+                    <div *ngIf="filterData.length!=0;else elseBlock">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th>Id</th>
+                                  <th>Name</th>
+                                  <th>Brewery Type</th>
+                                  <th>Street Address</th>
+                                  <th>Country</th>
+                                  <th>State</th>
+                                  <th>City</th>
+                                  <th>Postal Code</th>
+                                  <th>Longitude</th>
+                                  <th>Latitude</th>
+                                  <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let b of filterData | paginate: {itemsPerPage: 5, currentPage: p};">
+                                    <td>{{b.id}}</td>
+                                    <td>{{b.name}}</td>
+                                    <td>{{b.brewery_type}}</td>
+                                    <td>{{b.street}}</td>
+                                    <td>{{b.country}}</td>
+                                    <td>{{b.state}}</td>
+                                    <td>{{b.city}}</td>
+                                    <td>{{b.postal_code}}</td>
+                                    <td>{{b.longitude}}</td>
+                                    <td>{{b.latitude}}</td>
+                                    <td>{{b.phone}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ng-template #elseBlock>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th>Id</th>
+                                  <th>Name</th>
+                                  <th>Brewery Type</th>
+                                  <th>Street Address</th>
+                                  <th>Country</th>
+                                  <th>State</th>
+                                  <th>City</th>
+                                  <th>Postal Code</th>
+                                  <th>Longitude</th>
+                                  <th>Latitude</th>
+                                  <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let b of beerco | paginate: {itemsPerPage: 5, currentPage: p};">
+                                    <td>{{b.id}}</td>
+                                    <td>{{b.name}}</td>
+                                    <td>{{b.brewery_type}}</td>
+                                    <td>{{b.street}}</td>
+                                    <td>{{b.country}}</td>
+                                    <td>{{b.state}}</td>
+                                    <td>{{b.city}}</td>
+                                    <td>{{b.postal_code}}</td>
+                                    <td>{{b.longitude}}</td>
+                                    <td>{{b.latitude}}</td>
+                                    <td>{{b.phone}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-template>
+                    
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col col-sm-6 col-xs-6">showing the company details</div>
+                        <div class="col-sm-6 col-xs-6">
+                            <ul class="pagination hidden-xs pull-right">
+                                <pagination-controls (pageChange)="p=$event" class="float-right my-pagination" ></pagination-controls>
+                                <!--<li><a href="#"></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">></a></li>-->
+                            </ul>
+                            <ul class="pagination visible-xs pull-right">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+.tableHead{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 10px 40px;
+}
+.tableHead .searcheinput{
+    background: transparent;
+    border: #fff 1px solid;
+    border-radius: 100px;
+    outline: none;
+    padding-left: 20px;
+    color: #fff;
+    width: 35%;
+    height: 40px;
+}
+.tableHead .title{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 40px;
+}
+.tableHead .searcheinput::placeholder{
+    color: rgb(240, 224, 224);
+    font-size: 15px;
+    font-weight: 500;
+}
+@media only screen and (max-width:767px){
+	.tableHead{
+        display: block;
+    }
+    .tableHead .searcheinput{
+        width: 100%;
+    }
+}

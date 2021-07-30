@@ -1,0 +1,14 @@
+.jumbotron{
+	/*border-style: solid;*/
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+.scaleUp img{
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+.scaleUp img:hover{
+	transform: scale(2);
+	transition: all 0.5s ease-in-out;
+}

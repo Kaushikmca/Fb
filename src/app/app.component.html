@@ -1,0 +1,261 @@
+<header>
+  <nav class="nav" (mouseover)="hide()">
+    <div class="div">
+      <span (click)="show()">&#9776;&nbsp;</span>
+      <a class="navbar-brand" href="javascript:void(0)" [routerLink]="['/home']">
+        <div style="border-radius: 50%; border: #fff 2px solid;">
+          <img style="border-radius: 50%;" src="assets/f&b.jpg" height="40px" width="40px" alt="Home">
+        </div>
+      </a>
+    </div>
+    <a href="#" class="signIn">Sign In/Sign Up</a>
+  </nav>
+  <div class="overlay" (mouseover)="hide()"></div>
+  <video playsinline autoplay muted loop controls>
+    <source src="assets/Food and Beverage Service.mp4">
+  </video>
+  <div class="container h-100" (mouseover)="hide()">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3" data-aos='zoom-in'>Food and Beverage Industry</h1>
+        <!--<p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>-->
+      </div>
+    </div>
+  </div>
+</header>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="bodyPart">
+  <div class="sidenavbar" id="myNav" (mouseover)="show()">
+    <a href="javascript:void(0)" [routerLink]="['/about']">&nbsp;&nbsp;About Us</a>
+    <a href="javascript:void(0)" (mouseover)="showD1()" (mouseout)="hideD1()" style="transition: 0.5em linear;">&nbsp;&nbsp;Enhanced Materials<span id="toggle1" style="position: absolute; right: 10px; font-size: large;">></span></a> 
+    <a href="javascript:void(0)" (mouseover)="showD2()" (mouseout)="hideD2()">&nbsp;&nbsp;Products<span id="toggle2" style="position: absolute; right: 10px;font-size: large;">></span></a>
+    <a href="javascript:void(0)" [routerLink]="['/beer-co']">&nbsp;&nbsp;Our Team</a>
+  </div>
+  <div class="sidenavbarIllusion" (mouseover)="show()">
+    <span class="material-icons">info</span>
+    <span class="material-icons">category</span>
+    <span class="material-icons">storefront</span>
+    <span class="material-icons">groups</span>
+  </div>
+  <div class="dropdown list1" id="dropdown1" (mouseover)="showD1()" (mouseout)="hideD1()">
+    <a href="javascript:void(0)" [routerLink]="['/plasma']">&nbsp;&nbsp;Plasma Treatment</a>
+    <a href="javascript:void(0)" [routerLink]="['/membranes']">&nbsp;&nbsp;specialized Membranesng</a>
+  </div>
+  <div class="dropdown list2" id="dropdown2" (mouseover)="showD2()" (mouseout)="hideD2()">
+    <a href="javascript:void(0)" [routerLink]="['/food']">&nbsp;&nbsp;Dry Food</a>
+    <a href="javascript:void(0)" [routerLink]="['/foodfacts']">&nbsp;&nbsp;Mixed Food</a>
+    <a href="javascript:void(0)" [routerLink]="['/beer']">&nbsp;&nbsp;Beer</a>
+    <a href="javascript:void(0)" [routerLink]="['/cocktail']">&nbsp;&nbsp;Cocktail</a>
+ </div>
+  <div class="routerPart" (mouseover)="hide()">
+      <router-outlet></router-outlet>
+  </div> 
+</div>
+
+
+<footer id="dk-footer" class="dk-footer"  (mouseover)="hide()">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-4">
+        <div class="dk-footer-box-info">
+          <a href="index.html" class="footer-logo">
+            <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png" alt="footer_logo" class="img-fluid">
+          </a>
+          <p class="footer-info-text" style="color: aliceblue;">
+            First, we eat. Then, we do everything else.
+          </p>
+          <div class="footer-social-link">
+            <h3>Follow us</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/b.p.kallolkumarpaul/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://mobile.twitter.com/KALLOLKUMARPAU2">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://myaccount.google.com/?utm_source=OGB&tab=kk&utm_medium=app">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/kallol-kumar-p-645549b8/">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/kallol_kr._paul/">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Social link -->
+        </div>
+        <!-- End Footer info -->
+        <div class="footer-awarad">
+          <img src="images/icon/best.png" alt="">
+          <p>Best Design Company 2019</p>
+        </div>
+      </div>
+      <!-- End Col -->
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-us map">
+              <div class="contact-icon">
+                <i class="fa fa-map-o" aria-hidden="true"></i>
+              </div>
+              <!-- End contact Icon -->
+              <div class="contact-info">
+                <h3>Kolkata India</h3>
+                <p>22/a S.K Bose Road, Budg Budg, Kolkata</p>
+              </div>
+              <!-- End Contact Info -->
+            </div>
+            <!-- End Contact Us -->
+          </div>
+          <!-- End Col -->
+          <div class="col-md-6">
+            <div class="contact-us phone">
+              <div class="contact-icon">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+              </div>
+              <!-- End contact Icon -->
+              <div class="contact-info">
+                <h3>98 301 1 1354</h3>
+                <p>Give us a call</p>
+              </div>
+              <!-- End Contact Info -->
+            </div>
+            <!-- End Contact Us -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Contact Row -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="footer-widget footer-left-widget">
+              <div class="section-heading">
+                <h3>Useful Links</h3>
+                <span class="animate-border border-black"></span>
+              </div>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" [routerLink]="['/about']">About us</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Products</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" [routerLink]="['/beer-co']">Our Team</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#">Faq</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Footer Widget -->
+          </div>
+          <!-- End col -->
+          <div class="col-lg-6">
+            <div class="footer-widget footer-right-widget">
+              <div class="section-heading">
+                <h3>Feedback</h3>
+                <span class="animate-border border-black"></span>
+              </div>
+              <form action="#">
+                <div class="row feed">
+                  <label style="color: #fff;"><h4>Leave a Comment</h4></label>
+                  <div class="form-group float">
+                    <input type="text" class="input" placeholder=" ">
+                    <label>Your Name</label>
+                  </div>
+                  <div class="form-group float">
+                    <input type="text" class="input" placeholder=" ">
+                    <label>Email ID</label>
+                  </div>
+                  <div class="form-group float">
+                    <textarea cols="30" rows="2" class="input" placeholder=" "></textarea>
+                    <label>Comments</label>
+                  </div>
+                  <div class="form-group">
+                    <button class="send">
+                      <span class="material-icons">send</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- End form -->
+            </div>
+            <!-- End footer widget -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Widget Row -->
+  </div>
+  <!-- End Contact Container -->
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="padding-left: 30px;">
+          <span>Copyright © 2021, All Right Reserved</span>
+        </div>
+        <!-- End Col -->
+        <div class="col-md-6">
+          <div class="copyright-menu">
+            <ul>
+              <li>
+                <a href="#" [routerLink]="['/home']">Home</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Copyright Container -->
+  </div>
+  <!-- End Copyright -->
+  <!-- Back to top -->
+  <div id="back_to_top" class="back-to-top">
+    <button class="btn btn-dark" title="Back to Top" style="display: block;" (click)="up()">
+      <i class="fa fa-angle-up"></i>
+    </button>
+  </div>
+  <!-- End Back to top -->
+</footer>
