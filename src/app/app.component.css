@@ -87,7 +87,7 @@ header {
   z-index: 10;
   background-color:rgba(46, 46, 71, 0.5);
   height: 100%;
-  width: 0;
+  width:200px;
   overflow-x: hidden;
   transition: all 0.2s ease-in-out;
 }
