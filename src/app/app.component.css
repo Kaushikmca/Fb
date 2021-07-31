@@ -6,6 +6,10 @@ header {
   width: 100%;
   overflow: hidden;
 }
+.navbar-brand img{
+  width: 40px;
+  height: 40px;
+}
 .nav{
   position: fixed;
   top: 0;
@@ -30,15 +34,13 @@ header {
 .mobilenavbar{
   height: 0;
   /*border: #fff 1px solid;*/
-  width: 100%;
+  width: fit-content;
   position:fixed; 
   left: 0;
   z-index: 10; 
   background:rgb(46, 46, 71);
   overflow-y: hidden;
-  transition: all 0.5s ease-in-out;
-  overflow: scroll;
-  white-space: wrap;
+  /*transition: all 1s ease;*/
 }
 .mobilenavbar a{
   text-decoration: none;
@@ -50,12 +52,12 @@ header {
   font-size: 15px;
 }
 .Mdropdown{
-  padding: 0 5px;
+  padding: 0 15px;
   background-color:rgb(46, 46, 71);
   height: 0;
   width: 100%;
   overflow-y: hidden;
-  transition: all 0.2s ease-in-out;
+  /*transition: all 0.2s ease-in-out;*/
 }
 .Mdropdown a{
   text-decoration: none;
@@ -71,12 +73,23 @@ header {
 }
 /*Mobile nav bar*/
 @media screen and (max-width:768px) {
+  .nav{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-brand img{
+    width: 30px;
+    height: 30px;
+  }
   .hamburgerDiv{
     display: block;
   }
   .sidenavbarIllusion{
     display: none;
   }
+  /*.toggle{
+    right: 5px!important;
+  }*/
 }
 /*End of mobile navbar*/
 
@@ -85,6 +98,7 @@ header {
   color: aliceblue; 
   text-decoration: none; 
   font-size: larger; 
+  /*border: 1px #fff solid;*/
 }
 .signIn:hover{
   color: #55acee;
@@ -112,7 +126,7 @@ header {
   width: 70px;
   padding-top: 24px;
 }
-.sidenavbarIllusion:hover .sidenavbar{
+.sidenavbarIllusion:hover .sidenavbar {
   width: 180px;
 }
 .layer, .layer2, .layer4{
@@ -120,7 +134,8 @@ header {
 }
 .toggle{
   position: absolute; 
-  right: 1px;
+  right: 10px;
+  transition: all 0.2s ease;
 }
 .sidenavbarIllusion span{
   color: #fff;
@@ -153,11 +168,20 @@ header {
 .layer:hover .layer1{
   width: 210px
 }
+.layer:hover .t1{
+  transform: rotate(90deg);
+}
 .layer2:hover .layer3{
   width: 210px
 }
+.layer2:hover .t2{
+  transform: rotate(90deg);
+}
 .layer4:hover .layer5{
   width: 210px
+}
+.layer4:hover .t3{
+  transform: rotate(90deg);
 }
 .layer1{
   left: 250px;
@@ -201,7 +225,6 @@ header video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
