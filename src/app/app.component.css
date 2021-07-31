@@ -57,6 +57,12 @@ header {
   width: 70px;
   padding-top: 24px;
 }
+.sidenavbarIllusion:hover .sidenavbar{
+  width: 170px;
+}
+/*.hamburgar:hover .sidenavbar{
+  width: 170px;
+}*/
 .sidenavbarIllusion span{
   color: #fff;
   cursor: pointer;
@@ -78,14 +84,30 @@ header {
 }
 .dropdown{
   position: fixed;
-  left: 240px;
   z-index: 10;
   background-color:rgba(46, 46, 71, 0.5);
   height: 100%;
   width: 0;
   overflow-x: hidden;
   transition: all 0.2s ease-in-out;
-
+}
+.layer:hover .layer1{
+  width: 200px
+}
+.layer2:hover .layer3{
+  width: 200px
+}
+.layer4:hover .layer5{
+  width: 200px
+}
+.layer1{
+  left: 240px;
+}
+.layer3{
+	left: 440px;
+}
+.layer5{
+  left:640px;
 }
 .list1{
   top: 135px;
