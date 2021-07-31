@@ -21,11 +21,66 @@ header {
 .nav .div{
   display: flex;
 }
-.nav span{
+.hamburgerDiv{
   color: #fff;
   font-size: 30px;
   display: none;
+  /*border-style: solid;*/
 }
+.mobilenavbar{
+  height: 0;
+  /*border: #fff 1px solid;*/
+  width: 100%;
+  position:fixed; 
+  left: 0;
+  z-index: 10; 
+  background:rgb(46, 46, 71);
+  overflow-y: hidden;
+  transition: all 0.5s ease-in-out;
+  overflow: scroll;
+  white-space: wrap;
+}
+.mobilenavbar a{
+  text-decoration: none;
+  color:white;
+  /*border:#fff 1px solid;*/
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-size: 15px;
+}
+.Mdropdown{
+  padding: 0 5px;
+  background-color:rgb(46, 46, 71);
+  height: 0;
+  width: 100%;
+  overflow-y: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.Mdropdown a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  /*border: #fff 1px solid;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hamburgerDiv:hover .mobilenavbar,.Mlayer:hover .Mlayer1, .Mlayer2:hover .Mlayer3, .Mlayer4:hover .Mlayer5{
+  height: fit-content;
+}
+/*Mobile nav bar*/
+@media screen and (max-width:768px) {
+  .hamburgerDiv{
+    display: block;
+  }
+  .sidenavbarIllusion{
+    display: none;
+  }
+}
+/*End of mobile navbar*/
+
+
 .signIn{ 
   color: aliceblue; 
   text-decoration: none; 
@@ -67,9 +122,6 @@ header {
   position: absolute; 
   right: 1px;
 }
-/*.hamburgar:hover .sidenavbar{
-  width: 170px;
-}*/
 .sidenavbarIllusion span{
   color: #fff;
   cursor: pointer;
@@ -127,7 +179,7 @@ header {
   display: block;
   color: #fff;
   /*border: #fff 1px solid;*/
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 .sidenavbar a:hover, .sidenavbarIllusion span:hover,.dropdown a:hover, .dropdown a:hover{
@@ -575,21 +627,6 @@ body {
   }
 
   @media screen and (max-width:768px) {
-    .nav span{
-      display: block;
-    }
-    .sidenavbar{
-      left: 0;
-    }
-    .list1{
-      left: 170px;
-    }
-    .list2{
-      left: 170px;
-    }
-    .sidenavbarIllusion{
-      display: none;
-    }
     .routerPart{
       /*border: #000 1px solid;*/
       margin-left: 10px;
