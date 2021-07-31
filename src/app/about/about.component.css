@@ -6,6 +6,7 @@
 .bgcolor-skyblue {
     background:#eaf0f9;
 }
+
 .image-aboutus-banner {
     color: #fff;
     background: linear-gradient(165deg,red,blue);
@@ -222,7 +223,6 @@
     padding-bottom: 15px;
     border-top: 1px solid rgba(0,0,0,0.09);
     background: #fff;
-    
 }
 .copyright-text p {
     color: #707070;
@@ -292,11 +292,11 @@
     background: #b40028 ;
     border: 1px solid #fff;
     font-weight:700px;
-    
-    
 }
  
-
+.linkit{
+  color: #008aff;
+}
 
 /* Navigation */
 

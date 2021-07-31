@@ -58,7 +58,14 @@ header {
   padding-top: 24px;
 }
 .sidenavbarIllusion:hover .sidenavbar{
-  width: 170px;
+  width: 180px;
+}
+.layer, .layer2, .layer4{
+  position: relative;
+}
+.toggle{
+  position: absolute; 
+  right: 1px;
 }
 /*.hamburgar:hover .sidenavbar{
   width: 170px;
@@ -86,28 +93,28 @@ header {
   position: fixed;
   z-index: 10;
   background-color:rgba(46, 46, 71, 0.5);
-  height: 100%;
-  width:200px;
+  height: fit-content;
+  width: 0;
   overflow-x: hidden;
   transition: all 0.2s ease-in-out;
 }
 .layer:hover .layer1{
-  width: 200px
+  width: 210px
 }
 .layer2:hover .layer3{
-  width: 200px
+  width: 210px
 }
 .layer4:hover .layer5{
-  width: 200px
+  width: 210px
 }
 .layer1{
-  left: 240px;
+  left: 250px;
 }
 .layer3{
-	left: 440px;
+	left: 460px;
 }
 .layer5{
-  left:640px;
+  left:670px;
 }
 .list1{
   top: 135px;

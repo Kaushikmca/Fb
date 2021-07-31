@@ -1,9 +1,3 @@
-
-
-.aboutus-area {
-    padding-top:120px;
-     padding-bottom:120px;
-}
 /*-- aboutus Image --*/
 .aboutus-image {
   margin-right: 52px;
@@ -50,7 +44,7 @@
   
  /*-- counter --*/
 .counter {
-  border: 1px solid #eeeeee;
+ /* border: 1px solid #eeeeee;*/
   margin-top: 32px;
   float: left;
   width: 100%; }
@@ -80,5 +74,5 @@
       margin-bottom: 0;
       color: #8f8f8f; }
 .single-counter:hover{
-  box-shadow: 5px 5px 5px #ccc;
+  box-shadow: 0px 5px 2px rgba(96, 101, 129, 0.282);
 }
