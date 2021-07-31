@@ -43,16 +43,62 @@
     <a href="javascript:void(0)" [routerLink]="['/membranes']">&nbsp;&nbsp;specialized Membranesng</a>
   </div>
   <div class="dropdown list2" id="dropdown2" (mouseover)="showD2()" (mouseout)="hideD2()">
-    <a href="javascript:void(0)" [routerLink]="['/food']">&nbsp;&nbsp;Dry Food</a>
-    <a href="javascript:void(0)" [routerLink]="['/foodfacts']">&nbsp;&nbsp;Mixed Food</a>
-    <a href="javascript:void(0)" [routerLink]="['/beer']">&nbsp;&nbsp;Beer</a>
-    <a href="javascript:void(0)" [routerLink]="['/cocktail']">&nbsp;&nbsp;Cocktail</a>
+    <a href="javascript:void(0)" (mouseover)="showD3()" (mouseout)="hideD3()">&nbsp;&nbsp;Food<span id="toggle2" style="position: absolute; right: 10px;font-size: large;">></span></a>
+    <a href="javascript:void(0)" (mouseover)="showD2()" (mouseout)="hideD2()">&nbsp;&nbsp;Beverage<span id="toggle2" style="position: absolute; right: 10px;font-size: large;">></span></a>    
  </div>
+ <div class="dropdown list3" id="dropdown3" (mouseover)="showD3()" (mouseout)="hideD3()">
+  <a href="javascript:void(0)" [routerLink]="['/vegetables']">&nbsp;&nbsp;Vegetables</a> 
+  <a href="javascript:void(0)" [routerLink]="['/fruits']">&nbsp;&nbsp;Fruits</a>
+  <a href="javascript:void(0)" (mouseover)="showD4()" (mouseout)="hideD4()">&nbsp;&nbsp;Grains,Legumes,Nuts,Seeds</a>
+  <a href="javascript:void(0)" >&nbsp;&nbsp;Meat,Poultry</a>
+  <a href="javascript:void(0)" >&nbsp;&nbsp;Fish,Seafood</a>
+  <a href="javascript:void(0)" [routerLink]="['/dairyfood']">&nbsp;&nbsp;Dairy Foods</a>
+  <a href="javascript:void(0)" [routerLink]="['/eggs']">&nbsp;&nbsp;Eggs</a>
+ </div>
+ <div class="dropdown list4" id="dropdown3.1" (mouseover)="showD4()" (mouseout)="hideD4()">
+  <a href="javascript:void(0)" [routerLink]="['/grains']">&nbsp;&nbsp;Grains</a>
+  <a href="javascript:void(0)" [routerLink]="['/legumes']">&nbsp;&nbsp;Legumes</a>
+  <a href="javascript:void(0)" [routerLink]="['/nuts']">&nbsp;&nbsp;Nuts</a>
+  <a href="javascript:void(0)" [routerLink]="['/seeds']">&nbsp;&nbsp;Seeds</a>
+ </div>
+ <div class="dropdown list1" id="dropdown3.2" (mouseover)="showD1()" (mouseout)="hideD1()">
+  <a href="javascript:void(0)" [routerLink]="['/meat']">&nbsp;&nbsp;Meat</a>
+  <a href="javascript:void(0)" [routerLink]="['/poultry']">&nbsp;&nbsp;Poultry</a>
+</div>
+<div class="dropdown list1" id="dropdown3.3" (mouseover)="showD1()" (mouseout)="hideD1()">
+  <a href="javascript:void(0)" [routerLink]="['/fish']">&nbsp;&nbsp;Fish</a>
+  <a href="javascript:void(0)" [routerLink]="['/seafood']">&nbsp;&nbsp;Seafood</a>
+</div>
+<div class="dropdown list3" id="dropdown4" (mouseover)="showD3()" (mouseout)="hideD3()">
+  <a href="javascript:void(0)" >&nbsp;&nbsp;Alcoholic</a>
+  <a href="javascript:void(0)" >&nbsp;&nbsp;Non-Alcoholic</a>
+  <a href="javascript:void(0)" [routerLink]="['/toptrendy']">&nbsp;&nbsp;Top Trendy</a>  
+ </div>
+ <div class="dropdown list1" id="dropdown4.1" (mouseover)="showD1()" (mouseout)="hideD1()">
+  <a href="javascript:void(0)" [routerLink]="['/beer']">&nbsp;&nbsp;Beer</a>
+  <a href="javascript:void(0)" [routerLink]="['/wine']">&nbsp;&nbsp;Wine</a>
+  <a href="javascript:void(0)" [routerLink]="['/cider']">&nbsp;&nbsp;Cider</a>
+  <a href="javascript:void(0)" [routerLink]="['/cocktails']">&nbsp;&nbsp;Cocktails</a>
+  <a href="javascript:void(0)" [routerLink]="['/hardalcohol']">&nbsp;&nbsp;Hard Alcohol</a>
+  <a href="javascript:void(0)" [routerLink]="['/votka']">&nbsp;&nbsp;Votka</a>
+</div>
+<div class="dropdown list1" id="dropdown4.2" (mouseover)="showD1()" (mouseout)="hideD1()">
+  <a href="javascript:void(0)" [routerLink]="['/water']">&nbsp;&nbsp;Water</a>
+  <a href="javascript:void(0)" [routerLink]="['/milk']">&nbsp;&nbsp;Milk</a>
+  <a href="javascript:void(0)" [routerLink]="['/coffee']">&nbsp;&nbsp;Coffee</a>
+  <a href="javascript:void(0)" [routerLink]="['/sparklingdrinks']">&nbsp;&nbsp;Sparkling Drinks</a>
+  <a href="javascript:void(0)" [routerLink]="['/juices']">&nbsp;&nbsp;Juices</a>
+  <a href="javascript:void(0)" [routerLink]="['/energydrinks']">&nbsp;&nbsp;Energy Drinks</a>
+  <a href="javascript:void(0)" [routerLink]="['/mocktails']">&nbsp;&nbsp;Mocktails</a>
+  <a href="javascript:void(0)" [routerLink]="['/milkshakes']">&nbsp;&nbsp;MilkShakes</a>
+  <a href="javascript:void(0)" [routerLink]="['/smoothies']">&nbsp;&nbsp;Smoothies</a>
+  <a href="javascript:void(0)" [routerLink]="['/cocoa']">&nbsp;&nbsp;Cocoa</a>
+  <a href="javascript:void(0)" [routerLink]="['/tonicwater']">&nbsp;&nbsp;Tonic Water</a>
+</div>
   <div class="routerPart" (mouseover)="hide()">
       <router-outlet></router-outlet>
   </div> 
 </div>
-
 
 <footer id="dk-footer" class="dk-footer"  (mouseover)="hide()">
   <div class="container">
