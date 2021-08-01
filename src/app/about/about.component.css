@@ -6,7 +6,10 @@
 .bgcolor-skyblue {
     background:#eaf0f9;
 }
-
+.subHead{
+   color: chartreuse;
+   font-size: larger;
+}
 .image-aboutus-banner {
     color: #fff;
     background: linear-gradient(165deg,red,blue);
@@ -145,13 +148,21 @@
   font-size: 30px;
   top: 12px;
 }
+.holdBlog:hover #icon{
+  color: #4099FF;
+}
 .blogInput{
   width: 100%;
   padding: 10px 30px 10px 40px;
   font-size: 20px;
   border-radius: 200px;
   border: rgb(107, 106, 106) 1px solid;
+  background: transparent;
   outline: none;
+  color: #fff;
+}
+.blogInput::placeholder{
+  color: rgb(155, 147, 147);
 }
 .blogInput:focus{
   border-color: #4099FF;
@@ -293,10 +304,6 @@
     border: 1px solid #fff;
     font-weight:700px;
 }
- 
-.linkit{
-  color: #008aff;
-}
 
 /* Navigation */
 
@@ -390,7 +397,19 @@
   }
 }
 
-
+.well{
+  padding: 10px; 
+  margin-top: auto;
+  border-radius: 10px; 
+  color: rgb(255, 255, 255);
+}
+.linkit a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.linkit a:hover{
+  text-decoration: underline;
+}
 @media screen and (max-width:768px) {
   .image-aboutus-banner {
     margin-right: 20px;

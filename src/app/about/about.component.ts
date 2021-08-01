@@ -11,10 +11,4 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  blue(){
-    document.getElementById('icon').style.color='#4099FF';
-  }
-  grey(){
-    document.getElementById('icon').style.color='grey';
-  }
 }
