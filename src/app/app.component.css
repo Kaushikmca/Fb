@@ -64,8 +64,8 @@ header {
   display: block;
   color: #fff;
   /*border: #fff 1px solid;*/
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .hamburgerDiv:hover .mobilenavbar,.Mlayer:hover .Mlayer1, .Mlayer2:hover .Mlayer3, .Mlayer4:hover .Mlayer5{
